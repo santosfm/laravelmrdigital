@@ -3,7 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 
-Route::get('/index.php', [UserController::class, 'showWelcomePage'])->name('showWelcomePage'); //ADDED IT FOR HEROKU
+//Route::get('/index.php', [UserController::class, 'showWelcomePage'])->name('showWelcomePage'); //ADDED IT FOR HEROKU
 Route::get('/admin/main', [UserController::class, 'showWelcomePage'])->name('showWelcomePage');
 //Route::get('/users/user/{id}', [UserController::class, 'showUserById']);
 Route::get('/admin/users/create', [UserController::class, 'createUser']); //WORKS
