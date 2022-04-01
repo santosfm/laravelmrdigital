@@ -11,9 +11,9 @@
 <body>
 <!-- START OF MENU -->
 <div class="topnav" id="myTopnav">
-  <a href="{{ url('http://laravel.development/admin/main')}}">Home</a>
-  <a href="{{url('http://laravel.development/admin/users')}}">Registered Users</a>
-  <a href="{{ url('http://laravel.development/admin/users/create') }}">Create New User</a>
+  <a href="{{ url('http://laravelappmrdigital.herokuapp.com/admin/main')}}">Home</a>
+  <a href="{{url('http://laravelappmrdigital.herokuapp.com/admin/users')}}">Registered Users</a>
+  <a href="{{ url('http://laravelappmrdigital.herokuapp.com/admin/users/create') }}">Create New User</a>
   <a href="#" class="alignLastMenuItemRight">Welcome {{Auth::user()->fname;}}</a>
   <a href="javascript:void(0);" class="icon"> 
     <span class="responsiveIconWhite">&#9776;</span>
