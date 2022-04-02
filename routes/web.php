@@ -4,7 +4,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 
 Route::get('/admin/main', [UserController::class, 'showWelcomePage'])->name('showWelcomePage');
-//Route::get('/users/user/{id}', [UserController::class, 'showUserById']);
+Route::get('/', [UserController::class, 'showWelcomePage']);
 Route::get('/admin/users/create', [UserController::class, 'createUser']); 
 Route::post('/admin/users/create', [UserController::class, 'saveUser'])->name('createuser'); 
 Route::get('/admin/users', [UserController::class, 'showTheUsers'])->name('showusers'); 
